@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Home",
+        "id": "home",
+        "html": "<h1>Home</h1> <p>Benvenut* nel mio sito</p>"
+    },
+    {
+        "name": "Chi siamo",
+        "id": "about",
+        "html": "<h1>About</h1><p>Cosa c'è da sapere su di me</p>"
+    },
+    {
+        "name": "Contatti",
+        "id": "contacts",
+        "html": "<h1>Contatti</h1><p>I miei contatti</p>"
+    },
+    {
+        "name": "Galleria",
+        "id": "gallery",
+        "html": "<h1>Gallery</h1><p>Al momento non ci sono immagini</p>"
+    }
+]
