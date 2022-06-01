@@ -1,6 +1,12 @@
 let pages = [];
 
+const worker = new Worker('./myWorker.js');
 
+worker.addEventListener('message', logMessageFromWorker)
+
+function logMessageFromWorker(message) {
+    console.log(message.data)
+}
 
 function loadPages() {
     fetch('/pages.json')
@@ -52,5 +58,8 @@ function changePage(hash) {
     container.innerHTML = selectedPage.html;
 }
 
+function activateWorker(){
+    worker.postMessage('ciao')
+}
 
 loadPages()
